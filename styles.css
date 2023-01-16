@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(gym.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.left {
+    position: absolute;
+    left: 5px;
+    display: inline-block;
+}
+
+
+.center {
+    display: block;
+    width: 33%;
+    left: 580px;
+    margin-top: 25px;
+    position: absolute;
+
+}
+
+.center ul {
+    list-style: none;
+}
+
+.center ul li {
+    display: inline-block;
+    margin: 15px 20px;
+    position: relative;
+}
+
+.center ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.center ul li a::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background: #3AB4F2;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.5s;
+}
+
+
+.center ul li a:hover::after {
+    width: 100%;
+}
+
+
+.right {
+    position: absolute;
+    right: 20px;
+    margin-top: 12px;
+    top: 10px;
+    display: inline-block;
+
+}
+
+.btn {
+    width: 150px;
+    padding: 5px 30px;
+    text-align: center;
+    margin: 10px 12px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid #3AB4F2;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.submit {
+    width: 100px;
+    padding: 5px 20px;
+    margin: 15px auto;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid #3AB4F2;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    display: block;
+    
+}
+
+.submit:hover {
+    background: #3AB4F2;
+    border: 2px solid white;
+}
+
+span {
+    width: 0%;
+    height: 100%;
+    background: #3AB4F2;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .5s;
+}
+
+
+.btn:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+.container {
+    border: 2px solid white;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px 0 #999;
+    border-radius: 12px;
+    padding: 10px;
+    background: rgb(0 0 0 / 20%);
+    backdrop-filter: blur(4px);
+
+}
+
+.form-head {
+    text-align: center;
+}
+
+.data {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border-bottom: 1px solid #3AB4F2;
+    margin-top: 5px;
+
+}
+
+.input {
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    caret-color: white;
+    background: transparent;
+    color: white;
+
+}
+
+.gender {
+    display: inline-block;
+    vertical-align: center;
+    margin-top: 5px;
+    margin-left: 65px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    top: 825px;
+}
+
+.card {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.card h2 {
+    text-transform: uppercase;
+}
